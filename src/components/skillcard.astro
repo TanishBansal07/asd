@@ -1,0 +1,14 @@
+---
+const {skillname} = Astro.props
+
+---
+<div class="card bg-base-100 shadow-xl m-3">
+    
+    <div>
+        <img src={`src/assets/${skillname}.png`} class="h-40 w-40" alt="ddd">
+    </div>
+    <div class="card-body content-center tetx-center justify-center">
+      <p class="card-title text-center">{skillname}</p>
+          
+    </div>
+  </div>

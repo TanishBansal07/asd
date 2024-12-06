@@ -1,0 +1,17 @@
+---
+ import astroLogo from '../assets/astro.svg';
+fetch('http://localhost:5000/checkauth')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  });
+---
+<div class="flex justify-between bg-red-700 py-2 px-3">
+
+    <a href="/">Home</a>
+    <a href="/about">About Me</a>
+    <a href="/projects">Projects</a>
+    <a href="/githubc">GitHub Contributions</a>
+    
+
+</div>
